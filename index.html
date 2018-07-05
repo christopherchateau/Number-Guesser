@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Number Guesser</title>
+    <link href="main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" 
+    rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Number <span>Guesser</span></h1>
+    </header>
+    <main>
+      <input type="text" class="guess" aria-label="Enter guess" maxlength="6" 
+      placeholder="Enter your guess"> 
+      <button class="guess-button" disabled>Guess</button>
+      <button class="clear-button" disabled>Clear</button>
+      <h3>Change number range</h3>
+      <input type="text" class="change-min-val" maxlength="6" aria-label="Enter min range value" placeholder="Min">
+      <input type="text" class="change-max-val" maxlength="6" aria-label="Enter max range value" placeholder="Max">
+      <button class="submit-button" disabled>Submit</button>
+      <h3 class="last-guess-was">Guess a number</h3>
+      <h2 class="last-guess-num">0</h2>
+      <h3 class="result">Between 0 and 100</h3>
+      <h3 class="score">Score = <span class="score-span">0</span></h3>
+      <button class="reset-button" disabled>Reset</button>
+    </main>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>

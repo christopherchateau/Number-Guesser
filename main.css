@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #404041;
+  font-size: 2rem;
+  height: 7rem;
+  overflow: scroll; 
+  white-space: nowrap;
+  width: 100%; 
+}
+h1 {
+  color: #ED458B;
+  line-height: 7rem;
+}
+h2 {
+  color: #EB008B;
+  font-weight: 300;
+  font-size: 12rem;
+  line-height: 12rem;
+}
+h3 {
+  color: #404041;
+  font-size: 2rem;
+  font-weight: 300;
+}
+h1, h2, h3 {
+  text-align: center;
+}
+span {
+  color: #E6E7E8;
+  font-weight: 300;
+}
+h3 span {
+  color: #ED458B;
+  font-weight: bold;
+}
+main {
+  overflow: scroll;
+  padding-top: 3rem;
+}
+input {
+  font-size: 1.8rem;
+  height: 3rem;
+  padding-left: 1rem;
+}
+button {  
+  background-color: #929497;
+  border-radius: 2rem;
+  color: #FFF;
+  font-size: 1.8rem;
+  height: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  width: 16.5%;
+}
+.guess {
+  margin: 0 32%;
+  width: 36%;
+}
+.guess-button {
+  float: left;
+  margin-left: 32%;
+}
+.clear-button {
+  float: right;
+  margin-right: 32%;
+}
+.change-min-val {
+  float: left;
+  margin: 2rem 0 2rem 35%;
+  width: 13%;
+}
+.change-max-val {
+  float: right;
+  margin: 2rem 35% 2rem 0;
+  width: 13%;
+}
+.submit-button {
+  margin: 0.5rem 40% 2rem 40%;
+  width: 20%;
+}
+.score {
+  background-color: #404041;
+  border: 8px solid #E6E7E8;
+  border-radius: 2rem;
+  color: white;
+  margin: 2rem 35% 0 35%;
+  padding: .5rem 1rem;
+  width: 30%;
+}
+.reset-button {
+  font-size: 1.4rem;
+  height: 2.2rem;
+  margin: 2.5rem 30% 3rem 30%;
+  width: 40%;
+}
+button:hover {
+  background-color: #EB008B;
+}
+button:disabled {
+  background-color: #D0D2D3;
+}
+input[type="text"]:disabled {
+  background: #D0D2D3;
+}
+::placeholder {
+  color: #D0D2D3;
+  font-size: 2.2rem;
+  font-weight: 300;
+}
