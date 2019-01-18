@@ -20,6 +20,9 @@ let num;
 let parsedMin;
 let parsedMax;
 
+changeMinVal.addEventListener("keyup", buttonStatusChecker);
+changeMaxVal.addEventListener("keyup", buttonStatusChecker);
+
 guess.addEventListener("keyup", function() {
   if (guess.value.length) {
     buttonOn(".guess-button");
@@ -30,15 +33,11 @@ guess.addEventListener("keyup", function() {
   }
 });
 
-changeMinVal.addEventListener("keyup", buttonStatusChecker);
-
-changeMaxVal.addEventListener("keyup", buttonStatusChecker);
-
 guessButton.addEventListener("click", function(e) {
   e.preventDefault();
   counter++;
 
-  var parsedGuess = parseInt(guess.value);
+  let parsedGuess = parseInt(guess.value);
 
   lastGuessNum.innerText = parsedGuess;
   lastGuessWas.innerText = "Your last guess was";

@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -8,16 +8,16 @@ header {
   background-color: #404041;
   font-size: 2rem;
   height: 7rem;
-  overflow: scroll; 
+  overflow: scroll;
   white-space: nowrap;
-  width: 100%; 
+  width: 100%;
 }
 h1 {
-  color: #ED458B;
+  color: #ed458b;
   line-height: 7rem;
 }
 h2 {
-  color: #EB008B;
+  color: #eb008b;
   font-weight: 300;
   font-size: 12rem;
   line-height: 12rem;
@@ -27,15 +27,17 @@ h3 {
   font-size: 2rem;
   font-weight: 300;
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-align: center;
 }
 span {
-  color: #E6E7E8;
+  color: #e6e7e8;
   font-weight: 300;
 }
 h3 span {
-  color: #ED458B;
+  color: #ed458b;
   font-weight: bold;
 }
 main {
@@ -47,10 +49,10 @@ input {
   height: 3rem;
   padding-left: 1rem;
 }
-button {  
+button {
   background-color: #929497;
   border-radius: 2rem;
-  color: #FFF;
+  color: #fff;
   font-size: 1.8rem;
   height: 3rem;
   margin-bottom: 2rem;
@@ -85,11 +87,11 @@ button {
 }
 .score {
   background-color: #404041;
-  border: 8px solid #E6E7E8;
+  border: 8px solid #e6e7e8;
   border-radius: 2rem;
   color: white;
   margin: 2rem 35% 0 35%;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   width: 30%;
 }
 .reset-button {
@@ -99,16 +101,16 @@ button {
   width: 40%;
 }
 button:hover {
-  background-color: #EB008B;
+  background-color: #eb008b;
 }
 button:disabled {
-  background-color: #D0D2D3;
+  background-color: #d0d2d3;
 }
 input[type="text"]:disabled {
-  background: #D0D2D3;
+  background: #d0d2d3;
 }
 ::placeholder {
-  color: #D0D2D3;
+  color: #d0d2d3;
   font-size: 2.2rem;
   font-weight: 300;
 }
