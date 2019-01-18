@@ -139,12 +139,7 @@ function buttonStatusChecker() {
 }
 
 function numberChecker(input) {
-  var parsed = parseInt(input);
-
-  if (parsed != input || parsed.length === 0) {
-    return false;
-  }
-  return true;
+  return parseInt(input) != input || !parseInt(input).length;
 }
 
 function notANumber() {
