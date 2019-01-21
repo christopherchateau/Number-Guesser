@@ -122,9 +122,9 @@ resetButton.addEventListener("click", function(e) {
 
 function buttonStatusChecker() {
   if (
-    guess.value.length > 0 ||
-    changeMinVal.value.length > 0 ||
-    changeMaxVal.value.length > 0
+    guess.value.length ||
+    changeMinVal.value.length ||
+    changeMaxVal.value.length
   ) {
     buttonOn(".clear-button");
   } else {
