@@ -121,20 +121,13 @@ resetButton.addEventListener("click", function(e) {
 });
 
 function buttonStatusChecker() {
-  if (
-    guess.value.length ||
-    changeMinVal.value.length ||
-    changeMaxVal.value.length
-  ) {
-    buttonOn(".clear-button");
-  } else {
-    buttonOff(".clear-button");
-  }
-  if (changeMinVal.value == "" || changeMaxVal.value == "") {
-    buttonOff(".submit-button");
-  } else {
-    buttonOn(".submit-button");
-  }
+  guess.value.length || changeMinVal.value.length || changeMaxVal.value.length
+    ? buttonOn(".clear-button")
+    : buttonOff(".clear-button");
+
+  changeMinVal.value == "" || changeMaxVal.value == ""
+    ? buttonOff(".submit-button")
+    : buttonOn(".submit-button");
 }
 
 function numberChecker(input) {
