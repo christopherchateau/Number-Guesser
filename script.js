@@ -125,7 +125,7 @@ function buttonStatusChecker() {
     ? buttonOn(".clear-button")
     : buttonOff(".clear-button");
 
-  changeMinVal.value == "" || changeMaxVal.value == ""
+  !changeMinVal.length || !changeMaxVal.length 
     ? buttonOff(".submit-button")
     : buttonOn(".submit-button");
 }
